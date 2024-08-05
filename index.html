@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header>
+      <nav class="container nav-bar">
+        <a href="#">
+          <img class="logo" src="/images/logo.svg" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="#features">Features</a>
+          </li>
+          <li>
+            <a href="#team">Team</a>
+          </li>
+          <li>
+            <a href="#">Sign</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- hero -->
+
+    <section>
+      <div class="container row">
+        <div class="col flex-1">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form id="form-1" class="form-1">
+            <input
+              class="border"
+              type="email"
+              name="email"
+              id="email-1"
+              required
+              placeholder="Enter your email..."
+            />
+            <p id="error-1" class="error">Please check your email</p>
+
+            <button class="btn" type="submit">Get Started</button>
+          </form>
+        </div>
+        <div class="flex-1">
+          <img src="/images/illustration-1.svg" alt="illustration 1" />
+        </div>
+      </div>
+    </section>
+
+    <!-- features -->
+
+    <img
+      src="/images/bg-curve-desktop.svg"
+      class="desktop"
+      alt="curved background"
+    />
+
+    <img
+      src="/images/bg-curve-mobile.svg"
+      class="mobile"
+      alt="curved background"
+    />
+
+    <section>
+      <div class="container row">
+        <div class="col flex-1">
+          <h2>Stay productive, wherever you are</h2>
+          <p>
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs. <br />
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+          <a href="#" class="link">
+            See how Fylo works
+            <img
+              width="24"
+              height="24"
+              src="/images/icon-arrow.svg"
+              alt="icon-arrow"
+            />
+          </a>
+          <div class="card">
+            <img src="/images/icon-quotes.svg" alt="icon-quotes" />
+            <p>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="info">
+              <img src="/images/avatar-testimonial.jpg" alt="avatar" />
+              <div>
+                <h3>Kyle Burton</h3>
+                <small>Founder & CEO, Huddle</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img src="/images/illustration-2.svg" alt="illustration-2" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="desaturated-blue">
+        <!-- footer container 1 -->
+        <div class="container row">
+          <div class="col">
+            <h3>Get early access today</h3>
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <form class="col form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+            />
+            <button class="btn" type="submit">Get Started for free</button>
+          </form>
+        </div>
+      </div>
+      <div class="dark-blue">
+        <!-- footer container 2 -->
+        <div class="container footer-2">
+          <div>
+            <img class="logo mb-2" src="/images/footer-logo.svg" alt="logo" />
+            <ul class="foot-col">
+              <li class="flex">
+                <img src="/images/icon-phone.svg" alt="icon-phone" />
+                <span> Phone: +1-543-123-4567 </span>
+              </li>
+              <li class="flex">
+                <img src="/images/icon-email.svg" alt="icon-phone" />
+                <span> example@fylo.com </span>
+              </li>
+            </ul>
+          </div>
+          <ul class="foot-col">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
+          <ul class="foot-col">
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+          <ul class="icons">
+            <li>
+              <img src="/images/icon-facebook.svg" alt="icon-facebook" />
+            </li>
+            <li>
+              <img src="/images/icon-twitter.svg" alt="icon-twitter" />
+            </li>
+            <li>
+              <img src="/images/icon-instagram.svg" alt="icon-instagram" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
